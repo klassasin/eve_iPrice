@@ -1,0 +1,11 @@
+Start it:  ./ip
+
+Usage: 
+
+	 The modules can be entered manually, one per line.  After you are done, press Ctrl+d and it will then spit out the median selling prices for the 
+items in the order they were entered.
+
+	The modules can also be listed in a file (delimited by "\n") and passed into the script.
+
+			cat modules | ./ip
+	

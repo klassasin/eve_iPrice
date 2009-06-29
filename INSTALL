@@ -1,0 +1,12 @@
+External Files:
+
+	invTypes.db (invTypes table from CCP Data Dump, sqlite3 database)
+
+Requirements:
+
+	sqlite3-ruby (http://rubyforge.org/projects/sqlite-ruby/)
+
+Installing:
+
+	sudo gem install sqlite3-ruby
+

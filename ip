@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require 'ItemPrice'
+
+ip = ItemPrice.new
+names = STDIN.readlines.map!{|o| o.chop}
+ids = ip.namesToIDs(names)
+ip.priceMatch(ids)
