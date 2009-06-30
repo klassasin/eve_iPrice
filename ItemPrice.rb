@@ -37,7 +37,9 @@ class ItemPrice
 		src = Net::HTTP::get URI::parse(url)
 		xmldoc = Document.new(src)
 		XPath.each(xmldoc,'//sell/median') { |e|
-			puts "#{e.text}"
+			price = e.text
+			price.gsub!(/(\d)(?=\d{3}+(?:\D|$))/, '\\1,')
+			puts "#{price}"
 		}
 	end
 
