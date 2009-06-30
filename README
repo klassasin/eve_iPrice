@@ -1,11 +1,38 @@
-Start it:  ./ip
+= EVE iPrice:  Item Pricer
 
-Usage: 
+Item Pricer is a script which will parse a list of items, ships, &c. and list their median selling prices as stated on EVE-Central.
 
-	 The modules can be entered manually, one per line.  After you are done, press Ctrl+d and it will then spit out the median selling prices for the 
-items in the order they were entered.
+== License
 
-	The modules can also be listed in a file (delimited by "\n") and passed into the script.
+iPrice is copyright 2009 Kevin Laborda.  It is licensed under GPL2.  See the included LICENSE file for details
 
-			cat modules | ./ip
-	
+== Quick Start
+
+The quickest way to get started with iPrice is to first download the prerequisite sqlite3 gem.
+
+ $ sudo gem install sqlite3-ruby
+
+Once installed, the script can be run with the following
+
+ $ ./ip
+
+== Install
+
+As stated, the only required library is for sqlite3.  The easiest way to install is via RubyGems.
+
+== Usage
+
+There are no arguments for this script, so the following is all that is needed.
+
+ $ ./ip
+
+You can then type a list of modules (one per line).  When you are done, press Ctrl+D and it will list the prices with respect to the order that the 
+modules/ships/etc were typed.
+
+An alternative is to type the list in a file and then pipe it in.
+
+ $ cat list | ./ip
+
+== Contact
+
+E-mail me at klaborda<at>gmail<dot>com for any questions, comments, or bugs.
